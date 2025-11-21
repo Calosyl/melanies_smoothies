@@ -23,8 +23,10 @@ ingredient_list = st.multiselect(
     my_dataframe,
     max_selections=5
 )
+
+ingredients_string = ''
+
 if ingredient_list:
-    ingredients_string = ''
     for fruit_chosen in ingredient_list:
         ingredients_string += fruit_chosen + ' '
 
